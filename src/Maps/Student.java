@@ -14,6 +14,9 @@ class School{
 	
 	@Override
 	public void finalize() {
+		/*
+		 * This will not be printed bcz hashMpa prefers over gc
+		 */
 		System.out.println("Garbage Cleaning");
 	}
 }
